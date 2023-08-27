@@ -123,8 +123,6 @@ esac
 
 eval "$(zoxide init zsh)"
 
-export OPENAI_API_KEY="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"
-
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:$HOME/sdks/flutter/bin"
