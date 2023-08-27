@@ -1,0 +1,7 @@
+ function fish_prompt
+ 	fishline -s $status SIGSTATUS JOBS VFISH PWD WRITE N ROOT USERHOST SPACE 
+ end
+
+ function fish_right_prompt
+ 	fishline -s 0 -r CLOCK GIT
+ end

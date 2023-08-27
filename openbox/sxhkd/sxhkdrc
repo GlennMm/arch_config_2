@@ -1,0 +1,154 @@
+super + 1 
+   neovide
+
+super + 2
+    brave
+
+super + 3
+    inkscape
+
+#Gimp
+super + 4
+    gimp
+
+#Vlc
+super + 6
+    vlc --video-on-top
+
+#Rofi Fullscreen
+super + F11
+    # rofi -show drun -theme $HOME/.cache/wal/colors-rofi-light.rasi  
+    rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar/forest/scripts/rofi/launcher.rasi
+
+#Rofi
+super + r
+    rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar/forest/scripts/rofi/launcher.rasi
+
+#Rofi
+super + 
+    rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar/forest/scripts/rofi/launcher.rasi
+
+#archlinux-logout
+super + x
+    $HOME/.config/polybar/forest/scripts/powermenu.sh
+
+#Rofi theme selector
+super + f12
+    rofi-theme-selector
+
+#Pavucontrol
+super + v
+    pavucontrol
+
+#alacritty
+super + Return
+    alacritty
+
+#Xkill
+super + Escape
+    xkill
+
+#File-Manager
+super + shift + Return
+	thunar
+
+#reload sxhkd:
+super + shift + s
+	pkill -USR1 -x sxhkd
+
+#arcolinux-welcome-app
+ctrl + alt + w
+     arcolinux-welcome-app
+
+#archlinux-tweak-tool
+ctrl + alt + e
+    archlinux-tweak-tool
+
+#ohromium
+ctrl + alt + g
+    brave -no-default-browser-check
+
+#Nitrogen
+ctrl + alt + i
+     nitrogen
+
+#archlinux-logout
+ctrl + alt + k
+    $HOME/.config/polybar/forest/scripts/powermenu.sh
+
+#archlinux-logout
+ctrl + alt + l
+    $HOME/.config/polybar/forest/scripts/powermenu.sh
+
+#Pamac-manager
+ctrl + alt + p
+    pamac-manager
+
+#Xfce4-settings-manager
+ctrl + alt + m
+     xfce4-settings-manager
+
+#Pulse Audio Control
+ctrl + alt + u
+     pavucontrol
+
+#Xfce4-appfinder
+ctrl + alt + a
+    xfce4-appfinder
+
+#Xfce4-appfinder
+alt + F2
+    xfce4-appfinder --collapsed
+
+#Xfce4-appfinder
+alt + F3
+    xfce4-appfinder
+
+#Xcfe4-TaskManager
+ctrl + shift + Escape
+    xfce4-taskmanager
+
+#Scrot
+Print
+    scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
+
+#screeenshooter
+ctrl + Print
+     xfce4-screenshooter
+
+#Gnome-Screenshot
+ctrl + shift + Print
+     gnome-screenshot -i
+
+
+#xfce4-terminal dropdown
+F12
+    xfce4-terminal --drop-down
+
+
+#Raises volume
+XF86AudioRaiseVolume
+    amixer set Master 10%+
+
+#Lowers volume
+XF86AudioLowerVolume
+    amixer set Master 10%-
+
+#Mute
+XF86AudioMute
+    amixer -D pulse set Master 1+ toggle
+
+#Brightness up
+XF86MonBrightnessUp
+    xbacklight -inc 10
+
+#Brightness down
+XF86MonBrightnessDown
+    xbacklight -dec 10
+
+# Picom Toggle
+ctrl + alt + o
+    ~/.config/qtile/scripts/picom-toggle.sh
+
+ctrl + alt + s 
+    ~/bin/display_fix
